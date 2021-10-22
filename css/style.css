@@ -25,19 +25,34 @@ header h1{
     margin: 2px;
 }
 
+.training-option{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   background-color: #ff9900;
+}
+
+.training-option img{
+    width: 85%;
+}
+
+.training-option h2{
+    color: #2b78e4;
+}
+
 footer{
     background-color: #ff9900;
     display: flex;
     flex-direction: column;
 }
 
-.Social-media{
+.social-media{
     display: flex;
     justify-content: space-between;
 }
 
-.Social-media img{
-    width: 80px;
+.social-media img{
+    width: 30%;
 }
 
 .contact-info{
@@ -46,6 +61,39 @@ footer{
     align-items: center;
 }
 
-.ccontact-info p{
+.contact-info p{
     margin: 2px;
+}
+
+@media screen and (min-width: 600px){
+    header{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    header .header-title {
+        padding-left: 15%;
+        font-size: 50px;
+    }
+    .logo{
+        margin-left: 5%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .social-media{
+        display: flex;
+        flex-direction: row;
+    }
+    .social-media img{
+        margin: 10%;
+    }
+
+    .contact-info{
+        display: flex;
+        align-items: flex-end;
+    }
 }
